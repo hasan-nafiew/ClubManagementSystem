@@ -1,2 +1,0 @@
-# ClubManagementSystem
-PHP, Laravel
