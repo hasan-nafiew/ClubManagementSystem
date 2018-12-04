@@ -46,52 +46,33 @@
                                 <div class="table-responsive table-responsive-data2">
                                     <table class="table table-data2">
                                         <thead>
-                                            <tr>
-                                                <th>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </th>
-                                                <th>Name</th>
-                                                <th>Email</th> 
-                                                <th>Role Id</th>                                               
-                                                <th>Date Time</th>
-                                                <th>status</th>                                                
+                                            <tr>                                              
+                                                <th class="align-header-center">Id</th>
+                                                <th class="align-header-center">Name</th>
+                                                <th class="align-header-center">Email</th> 
+                                                <th class="align-header-center">Role Name</th>                                               
+                                                <th class="align-header-center">Created Date-Time</th>                                                                                            
                                             </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($users as $data)
                                             <tr class="tr-shadow">
-                                                <td>
-                                                    <label class="au-checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="au-checkmark"></span>
-                                                    </label>
-                                                </td>
+                                                
+                                                <td>{{$data->id}}</td>
                                                 <td>{{$data->name}}</td>
                                                 <td>
                                                     <span class="block-email">{{$data->email}}</span>
                                                 </td>
                                                 <td class="desc">{{$data->roleName->role_name}}</td>
-                                                <td>{{$data->created_at}}</td>
+                                                <td>{{$data->created_at}}</td>                                                                                             
                                                 <td>
-                                                    <span class="status--process">-----</span>
-                                                </td>                                              
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                            <i class="zmdi zmdi-mail-send"></i>
-                                                        </button>
+                                                    <div class="table-data-feature">                                                      
                                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                                             <i class="zmdi zmdi-edit"></i>
                                                         </button>
                                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                                             <i class="zmdi zmdi-delete"></i>
-                                                        </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                            <i class="zmdi zmdi-more"></i>
-                                                        </button>
+                                                        </button>                                                        
                                                     </div>
                                                 </td>
                                             </tr>  

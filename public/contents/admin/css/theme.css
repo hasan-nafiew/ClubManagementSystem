@@ -14648,3 +14648,8 @@ section {
 .btn-member-add .single-btn{
     padding-left: 20px;
 }
+
+/* align-center */
+.align-header-center{
+    text-align: center;
+}

@@ -30,6 +30,8 @@
     <link href="{{asset('contents/admin')}}/vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="{{asset('contents/admin')}}/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="{{asset('contents/admin')}}/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <!-- date time picker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"/>
 
     <!-- Main CSS-->
     <link href="{{asset('contents/admin')}}/css/theme.css" rel="stylesheet" media="all">
@@ -93,12 +95,15 @@
                         </li>  
                         @if(Auth::user()->role_id==1)                    
                         <li>
-                            <a href="{{url('/admin/user')}}"><i class="fas fa-table fa-bg"></i>Users</a>
+                            <a href="{{url('/admin/user')}}"><i class="fas fa-users fa-bg"></i>Users</a>
                         </li>
                         @endif
                         <li>
                             <a href="{{url('/admin/contactus')}}"><i class="fas fa-comments fa-bg"></i>Contact Messages</a>
-                        </li>                                        
+                        </li>   
+                        <li>
+                            <a href="{{url('/admin/member')}}"><i class="fas fa-comments fa-users"></i>Members</a>
+                        </li>                                      
                         <li>
                             <a href="{{url('/')}}" target="_blank"><i class="fas fa-globe fa-bg"></i>Live Site</a>                            
                         </li> 
@@ -321,9 +326,16 @@
     <script src="{{asset('contents/admin')}}/vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="{{asset('contents/admin')}}/vendor/select2/select2.min.js">
     </script>
-
+    <!-- date time picker -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     <!-- Main JS-->
     <script src="{{asset('contents/admin')}}/js/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+     </script>      
 
 </body>
 

@@ -17,7 +17,7 @@ class UserController extends Controller
     }
     public function index()
     {
-        $users=User::all();
+        $users=User::Where('status',1)->orderBy('id','DESC')->get();
         return view('admin.user.all',compact('users'));
     }
     public function add()

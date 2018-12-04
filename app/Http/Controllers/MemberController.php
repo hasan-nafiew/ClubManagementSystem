@@ -15,7 +15,8 @@ class MemberController extends Controller
     }
     public function index()
     {
-        return view('admin.member.all');
+        $allMembers=Member::Where('member_status',1)->orderBy('member_id','DESC')->get();
+        return view('admin.member.all',compact('allMembers'));
     }
     public function add()
     {
@@ -46,5 +47,10 @@ class MemberController extends Controller
             Session::flash('error','value');
             return redirect('/admin/member/add');
         }
+    }
+    public function allUser()
+    {
+        $allMembers=Members::Where('member_status',1)-all();
+        return view('admin.member.all',compact('allMembers'));
     }
 }

@@ -47,11 +47,23 @@
                                             <input type="text" name="member_profession" class="form-control" id="phone" placeholder="Enter Profession">
                                         </div>
                                 </div>   
-                                <div class="form-group row">
-                                        <label class="control-label col-sm-2" for="phone">Date of Birth</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" name="member_dof" class="form-control" id="phone" placeholder="Select Date Of Birth">
+                                <div class="form-group row">   
+                                <label class="control-label col-sm-2" for="phone">Date Of Birth</label>                           
+                                    <div class='input-group date col-sm-6' id='datetimepicker1'>
+                                                            <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
                                         </div>
+                                    </div>                                           
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker1').datetimepicker();
+                                        });
+                                    </script>      
+                                                                             
+                                    
                                 </div>   
                                 <div class="form-group row">
                                         <label class="control-label col-sm-2" for="paddress">Present Address</label>
