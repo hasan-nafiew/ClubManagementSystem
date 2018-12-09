@@ -14653,3 +14653,11 @@ section {
 .align-header-center{
     text-align: center;
 }
+/* self css for custom button */
+.btn-custom{
+    margin-bottom: 25px;
+    
+}
+.btn-custom .btn{
+    padding: 10px 30px;
+}
