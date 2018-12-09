@@ -31,7 +31,7 @@
     <link href="{{asset('contents/admin')}}/vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="{{asset('contents/admin')}}/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
     <!-- date time picker -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"/>
+    <link rel="stylesheet" href="{{asset('contents/admin')}}/css/jquery.datetimepicker.min.css">
 
     <!-- Main CSS-->
     <link href="{{asset('contents/admin')}}/css/theme.css" rel="stylesheet" media="all">
@@ -324,18 +324,42 @@
     <script src="{{asset('contents/admin')}}/vendor/circle-progress/circle-progress.min.js"></script>
     <script src="{{asset('contents/admin')}}/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="{{asset('contents/admin')}}/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="{{asset('contents/admin')}}/vendor/select2/select2.min.js">
+    <script src="{{asset('contents/admin')}}/vendor/select2/select2.min.js">    
     </script>
-    <!-- date time picker -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
     <!-- Main JS-->
-    <script src="{{asset('contents/admin')}}/js/main.js"></script>
-    <script type="text/javascript">
+     <script src="{{asset('contents/admin')}}/js/main.js"></script>
+    <!-- date time picker -->
+    <script src="{{asset('contents/admin')}}/js/jquery.js"></script>
+    <script src="{{asset('contents/admin')}}/js/jquery.datetimepicker.full.js"></script>   
+    <script>
+       jQuery.datetimepicker.setLocale('de');
+        jQuery('#datetimepicker').datetimepicker({
+         i18n:{
+          de:{
+           months:[
+            'Januar','Februar','März','April',
+            'Mai','Juni','Juli','August',
+            'September','Oktober','November','Dezember',
+           ],
+           dayOfWeek:[
+            "So.", "Mo", "Di", "Mi", 
+            "Do", "Fr", "Sa.",
+           ]
+          }
+         },
+         timepicker:false,
+         format:'Y-m-d'
+        });
+    </script> 
+   
+   
+
+    
+    <!-- <script type="text/javascript">
         $(function () {
             $('#datetimepicker1').datetimepicker();
         });
-     </script>      
+     </script>       -->
 
 </body>
 

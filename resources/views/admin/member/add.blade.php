@@ -48,19 +48,12 @@
                                         </div>
                                 </div>   
                                 <div class="form-group row">   
-                                <label class="control-label col-sm-2" for="phone">Date Of Birth</label>                           
-                                    <div class="col-sm-6" id='datetimepicker1'>
-                                        <div class="col">
-                                            <input data-date-format="dd/mm/yyyy" id="datepicker">
-                                        </div> 
-                                            
-                                    </div>                                           
-                                    <script type="text/javascript">
-                                        $(function () {
-                                            $('#datetimepicker1').datetimepicker();
-                                        });
-                                    </script>      
-                                                                             
+                                <label class="control-label col-sm-2" for="datetimepicker">Date Of Birth</label>                           
+                                  
+                                <div class="col-sm-6">
+                                            <input type="text" name="member_date_of_birth" class="form-control" id="datetimepicker" >
+                                 </div>                                   
+                                                                                                                   
                                     
                                 </div>   
                                 <div class="form-group row">

@@ -20,7 +20,7 @@
                                                 <th class="text-center">Contact</th>
                                                 <th class="text-center">Profession</th>
                                                 <th class="text-center">Status</th>
-                                                <th class="text-center">DateTime</th>
+                                                <th class="text-center">Date of Birth</th>
                                                 <th class="text-center">Update</th>
                                             </tr>
                                         </thead>
@@ -33,7 +33,7 @@
                                                 <td>{{$data->member_contact}}</td>
                                                 <td>{{$data->member_profession}}</td>
                                                 <td>{{$data->member_status}}</td>
-                                                <td>{{$data->created_at}}</td>
+                                                <td>{{$data->member_date_of_birth}}</td>
                                                 <td>{{$data->updated_at}}</td>
                                               
                                                 <!-- <td>

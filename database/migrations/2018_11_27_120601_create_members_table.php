@@ -21,7 +21,7 @@ class CreateMembersTable extends Migration
             $table->string('member_blood_group',50);
             $table->string('member_nid',50);
             $table->string('member_profession',50);
-            $table->string('member_date_of_birth',50);
+            $table->string('member_date_of_birth',191);
             $table->string('member_present_address',50);
             $table->string('member_permanent_address',50);
             $table->integer('member_status')->default(1);

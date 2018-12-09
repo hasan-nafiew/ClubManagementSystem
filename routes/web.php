@@ -37,6 +37,7 @@ Route::get('/admin/member/', 'MemberController@index')->name('');
 Route::get('/admin/member/add', 'MemberController@add')->name('');
 Route::post('admin/member/submit','MemberController@add_member')->name('');
 
+
 //contactus Controller
 Route::get('/admin/contactus', 'ContactusController@index')->name('');
 Route::get('/admin/contactus/view/{id}', 'ContactusController@view')->name('');
@@ -44,3 +45,8 @@ Route::get('/admin/contactus/softdelete/{id}', 'ContactusController@soft_delete'
 
 //RecycleController
 Route::get('admin/recycle','RecycleController@index')->name('');
+
+
+Route::get('/date', function(){
+    return view('date');
+});

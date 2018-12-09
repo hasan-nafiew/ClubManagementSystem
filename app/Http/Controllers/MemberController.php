@@ -32,7 +32,7 @@ class MemberController extends Controller
             'member_blood_group'=>htmlentities($_POST['member_blood'],ENT_QUOTES),
             'member_nid'=>htmlentities($_POST['member_nid'],ENT_QUOTES),
             'member_profession'=>htmlentities($_POST['member_profession'],ENT_QUOTES),
-            'member_date_of_birth'=>htmlentities($_POST['member_dof'],ENT_QUOTES),
+            'member_date_of_birth'=>htmlentities($_POST['member_date_of_birth'],ENT_QUOTES),
             'member_present_address'=>htmlentities($_POST['member_paddress'],ENT_QUOTES),
             'member_permanent_address'=>htmlentities($_POST['member_pmaddress'],ENT_QUOTES),
             'created_at'=>Carbon::now()->toDateTimeString()
