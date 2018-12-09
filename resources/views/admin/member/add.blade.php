@@ -49,13 +49,11 @@
                                 </div>   
                                 <div class="form-group row">   
                                 <label class="control-label col-sm-2" for="phone">Date Of Birth</label>                           
-                                    <div class='input-group date col-sm-6' id='datetimepicker1'>
-                                                            <div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" />
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
+                                    <div class="col-sm-6" id='datetimepicker1'>
+                                        <div class="col">
+                                            <input data-date-format="dd/mm/yyyy" id="datepicker">
+                                        </div> 
+                                            
                                     </div>                                           
                                     <script type="text/javascript">
                                         $(function () {

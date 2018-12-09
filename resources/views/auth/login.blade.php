@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-Admin Panel
+Admin Panel | Login
 @endsection
 @section('content')
 <div class="container">
