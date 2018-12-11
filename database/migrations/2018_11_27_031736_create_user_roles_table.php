@@ -15,8 +15,12 @@ class CreateUserRolesTable extends Migration
     {
         Schema::create('user_roles', function (Blueprint $table) {
             $table->increments('role_id');
-            $table->string('role_name',20)->unique();
-            $table->integer('role_status')->default(1);
+            $table->integer('member_id',20)->unique();
+            $table->float('payment_amount',8,2);
+            $table->float('payment_due',8,2);
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
+            $table->integer('payment_status')->default(1);
             $table->timestamps();
         });
     }
